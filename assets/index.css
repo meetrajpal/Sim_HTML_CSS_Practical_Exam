@@ -78,11 +78,10 @@ option {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5em;
+  gap: 3em;
   padding-top: 1em;
   border-bottom: 1px solid #d2d4d6;
-  flex-wrap: nowrap;
-  overflow-x: auto;
+  flex-wrap: wrap;
 }
 
 .categoryCard {
@@ -164,11 +163,12 @@ option {
 
 .gridContainer {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(auto-fit, auto);
   gap: 1em;
-  grid-template-areas: "deals deals deals deals ads" "other other other other other";
+  grid-template-areas: "deals deals deals deals deals ads" "other other other other other other";
   margin: 1rem 5rem;
+  position: relative;
 }
 
 .gridBox {
@@ -183,6 +183,22 @@ option {
   border-bottom: 1px solid #d2d4d6;
 }
 
+.dealsTopLeft {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+.dealsTopLeft2 {
+  padding-bottom: 1em;
+}
+.dealsTopLeft2 > h2 {
+  margin-bottom: 0;
+}
+
+.dealsTopLeft2 > span {
+  color: #aeaeae;
+}
+
 .dealViewBtn {
   background-color: #2874f0;
   color: white;
@@ -191,18 +207,31 @@ option {
 }
 
 .dealsBottomBar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 1em;
-  flex-wrap: nowrap;
-  overflow-x: auto;
   margin-top: 1em;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.gtBtn {
+  position: absolute;
+  background-color: white;
+  padding: 2em 0.1em 2em 0.3em;
+  box-shadow: -10px 0px 10px grey;
+  border-radius: 5px 0px 0px 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.gtBtn {
+  top: 100px;
+  right: 228px;
 }
 
 .prodCard {
   text-align: center;
-  max-width: 11%;
+  flex-shrink: 0;
+  width: 150px;
 }
 
 .prodCard > img {
@@ -210,10 +239,110 @@ option {
   height: auto;
 }
 
-.prodCard > .prodCardDiscount {
-  color: green;
+.prodCardCompany {
+  margin: 0.3em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.prodCard > .prodCardDetail {
+.prodCardDiscount {
+  color: green;
+  margin: 0.3em;
+}
+
+.prodCardDetail {
   color: #aeaeae;
+  margin: 0.3em;
+}
+
+.ads {
+  background-image: url("./images/other/banner.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media screen and (max-width: 412px) {
+  .logo {
+    width: 20%;
+  }
+
+  .dealsTopLeft h2 {
+    font-size: large;
+  }
+
+  .dealViewBtn {
+    padding: 0.7em 1em;
+    flex-shrink: 0;
+  }
+
+  .dealsBottomBar {
+    flex-wrap: wrap !important;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 992px) {
+  .logo {
+    width: 10%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    padding: 0.5em 0em;
+    gap: 0.5em;
+  }
+
+  #searchBox {
+    font-size: 0.7rem;
+  }
+
+  .loginBtn {
+    margin: 0;
+    padding: 0.5em;
+  }
+
+  .navDropdown {
+    padding: 0em;
+  }
+
+  .cartBtn {
+    display: none;
+  }
+
+  .categoryContainer {
+    gap: 1em;
+    padding: 1em;
+  }
+
+  .gridContainer {
+    grid-template-areas: "deals deals deals deals deals deals" "ads ads ads ads ads ads" "other other other other other other";
+    margin: 1em;
+  }
+}
+
+@media screen and (min-width: 770px) and (max-width: 992px) {
+  .logo {
+    width: 10%;
+  }
+
+  .loginBtn {
+    margin: 0;
+    padding: 0.5em;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .gtBtn {
+    display: block;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  scrollbar-width: none;
 }
