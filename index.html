@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flipkart</title>
     <link rel="stylesheet" href="./assets/index.css" />
+    <script>
+      function scrollDeals1() {
+        const container = document.getElementById("dealsBottomBar1");
+        container.scrollBy({
+          left: 200,
+          behavior: "smooth",
+        });
+      }
+      function scrollDeals2() {
+        const container = document.getElementById("dealsBottomBar2");
+        container.scrollBy({
+          left: 200,
+          behavior: "smooth",
+        });
+      }
+    </script>
   </head>
   <body>
     <div class="header">
@@ -114,7 +130,7 @@
 
     <div class="gridContainer">
       <div class="gridBox gtBtnContainer" style="grid-area: deals">
-        <div class="gtBtn">
+        <div class="gtBtn" onclick="scrollDeals1()">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="35"
@@ -138,7 +154,7 @@
           <button class="dealViewBtn">VIEW ALL</button>
         </div>
 
-        <div class="dealsBottomBar">
+        <div class="dealsBottomBar" id="dealsBottomBar1">
           <div class="prodCard">
             <img
               src="./assets/images/products/wrist-watch.webp"
@@ -241,7 +257,7 @@
       />
 
       <div class="gridBox gtBtnContainer" style="grid-area: other">
-        <div class="gtBtn">
+        <div class="gtBtn" onclick="scrollDeals2()">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="35"
@@ -265,7 +281,7 @@
           <button class="dealViewBtn">VIEW ALL</button>
         </div>
 
-        <div class="dealsBottomBar">
+        <div class="dealsBottomBar" id="dealsBottomBar2">
           <div class="prodCard">
             <img
               src="./assets/images/products/harmonium.webp"
