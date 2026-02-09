@@ -210,16 +210,19 @@ option {
   margin-top: 1em;
   display: flex;
   overflow-x: scroll;
+}
+
+.gtBtnContainer {
   position: relative;
 }
 
 .gtBtn {
   position: absolute;
-  top: 60px;
+  top: 120px;
   right: 0;
   background-color: white;
   padding: 2em 0.1em 2em 0.3em;
-  box-shadow: -10px 0px 10px grey;
+  box-shadow: -5px 0px 10px grey;
   border-radius: 5px 0px 0px 5px;
   cursor: pointer;
 }
