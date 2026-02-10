@@ -5,22 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flipkart</title>
     <link rel="stylesheet" href="./assets/index.css" />
-    <script>
-      function scrollDeals1() {
-        const container = document.getElementById("dealsBottomBar1");
-        container.scrollBy({
-          left: 200,
-          behavior: "smooth",
-        });
-      }
-      function scrollDeals2() {
-        const container = document.getElementById("dealsBottomBar2");
-        container.scrollBy({
-          left: 200,
-          behavior: "smooth",
-        });
-      }
-    </script>
   </head>
   <body>
     <div class="header">
@@ -130,7 +114,7 @@
 
     <div class="gridContainer">
       <div class="gridBox gtBtnContainer" style="grid-area: deals">
-        <div class="gtBtn" onclick="scrollDeals1()">
+        <a class="gtBtn" href="./index.html#scrolled" target="_self">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="35"
@@ -144,7 +128,7 @@
               d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
             />
           </svg>
-        </div>
+        </a>
         <div class="dealsTopBar">
           <div class="dealsTopLeft">
             <h2>Deals of the Day</h2>
@@ -246,6 +230,38 @@
             <p class="prodCardDiscount">Extra 10% off</p>
             <p class="prodCardDetail">Space Saving Furniture</p>
           </div>
+
+          <div class="prodCard">
+            <img
+              src="./assets/images/products/home-decor.webp"
+              alt="Product Image"
+            />
+            <pre class="prodCardCompany"><b>Best of home decor</b></pre>
+            <p class="prodCardDiscount">From &#8377;79</p>
+            <p class="prodCardDetail">Lowest price ever</p>
+          </div>
+
+          <div class="prodCard">
+            <img
+              src="./assets/images/products/lava-phone.webp"
+              alt="Product Image"
+            />
+            <pre class="prodCardCompany"><b>Lava Phone</b></pre>
+            <p class="prodCardDiscount">Upto 60% off</p>
+            <p class="prodCardDetail">Grab yours!</p>
+          </div>
+
+          <div class="prodCard">
+            <img
+              src="./assets/images/products/tablet-case.webp"
+              alt="Product Image"
+            />
+            <pre class="prodCardCompany"><b>Mobile Accessories</b></pre>
+            <p class="prodCardDiscount">Upto 80% off</p>
+            <p class="prodCardDetail">For all top models</p>
+          </div>
+
+          <div id="scrolled"></div>
         </div>
       </div>
 
@@ -257,7 +273,7 @@
       />
 
       <div class="gridBox gtBtnContainer" style="grid-area: other">
-        <div class="gtBtn" onclick="scrollDeals2()">
+        <a class="gtBtn" href="./index.html#scrolled2" target="_self">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="35"
@@ -271,7 +287,7 @@
               d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
             />
           </svg>
-        </div>
+        </a>
 
         <div class="dealsTopBar">
           <div class="dealsTopLeft2">
@@ -321,6 +337,168 @@
             <p class="prodCardDiscount">Starting &#8377;1799</p>
             <p class="prodCardDetail">Jazz Reveal!</p>
           </div>
+
+          <div class="prodCard">
+            <img
+              src="./assets/images/products/harmonium.webp"
+              alt="Product Image"
+            />
+            <pre class="prodCardCompany"><b>Harmoniums</b></pre>
+            <p class="prodCardDiscount">Upto 60% off</p>
+            <p class="prodCardDetail">Shop now!</p>
+          </div>
+
+          <div class="prodCard">
+            <img
+              src="./assets/images/products/guitar-2.avif"
+              alt="Product Image"
+            />
+            <pre class="prodCardCompany"><b>Accoustic Guitars</b></pre>
+            <p class="prodCardDiscount">Starting from &#8377;1999</p>
+            <p class="prodCardDetail">By Harmon</p>
+          </div>
+
+          <div class="prodCard">
+            <img
+              src="./assets/images/products/flute.avif"
+              alt="Product Image"
+            />
+            <pre class="prodCardCompany"><b>Flutes</b></pre>
+            <p class="prodCardDiscount">Upto 80% off</p>
+            <p class="prodCardDetail">Shop now!</p>
+          </div>
+
+          <div class="prodCard">
+            <img
+              src="./assets/images/products/guitar.avif"
+              alt="Product Image"
+            />
+            <pre class="prodCardCompany"><b>Accoustic Guitars</b></pre>
+            <p class="prodCardDiscount">Starting &#8377;1799</p>
+            <p class="prodCardDetail">Jazz Reveal!</p>
+          </div>
+
+          <div class="prodCard">
+            <img
+              src="./assets/images/products/harmonium.webp"
+              alt="Product Image"
+            />
+            <pre class="prodCardCompany"><b>Harmoniums</b></pre>
+            <p class="prodCardDiscount">Upto 60% off</p>
+            <p class="prodCardDetail">Shop now!</p>
+          </div>
+
+          <div class="prodCard">
+            <img
+              src="./assets/images/products/guitar-2.avif"
+              alt="Product Image"
+            />
+            <pre class="prodCardCompany"><b>Accoustic Guitars</b></pre>
+            <p class="prodCardDiscount">Starting from &#8377;1999</p>
+            <p class="prodCardDetail">By Harmon</p>
+          </div>
+
+          <div class="prodCard">
+            <img
+              src="./assets/images/products/flute.avif"
+              alt="Product Image"
+            />
+            <pre class="prodCardCompany"><b>Flutes</b></pre>
+            <p class="prodCardDiscount">Upto 80% off</p>
+            <p class="prodCardDetail">Shop now!</p>
+          </div>
+
+          <div class="prodCard">
+            <img
+              src="./assets/images/products/guitar.avif"
+              alt="Product Image"
+            />
+            <pre class="prodCardCompany"><b>Accoustic Guitars</b></pre>
+            <p class="prodCardDiscount">Starting &#8377;1799</p>
+            <p class="prodCardDetail">Jazz Reveal!</p>
+          </div>
+
+          <div class="prodCard">
+            <img
+              src="./assets/images/products/harmonium.webp"
+              alt="Product Image"
+            />
+            <pre class="prodCardCompany"><b>Harmoniums</b></pre>
+            <p class="prodCardDiscount">Upto 60% off</p>
+            <p class="prodCardDetail">Shop now!</p>
+          </div>
+
+          <div class="prodCard">
+            <img
+              src="./assets/images/products/guitar-2.avif"
+              alt="Product Image"
+            />
+            <pre class="prodCardCompany"><b>Accoustic Guitars</b></pre>
+            <p class="prodCardDiscount">Starting from &#8377;1999</p>
+            <p class="prodCardDetail">By Harmon</p>
+          </div>
+
+          <div class="prodCard">
+            <img
+              src="./assets/images/products/flute.avif"
+              alt="Product Image"
+            />
+            <pre class="prodCardCompany"><b>Flutes</b></pre>
+            <p class="prodCardDiscount">Upto 80% off</p>
+            <p class="prodCardDetail">Shop now!</p>
+          </div>
+
+          <div class="prodCard">
+            <img
+              src="./assets/images/products/guitar.avif"
+              alt="Product Image"
+            />
+            <pre class="prodCardCompany"><b>Accoustic Guitars</b></pre>
+            <p class="prodCardDiscount">Starting &#8377;1799</p>
+            <p class="prodCardDetail">Jazz Reveal!</p>
+          </div>
+
+          <div class="prodCard">
+            <img
+              src="./assets/images/products/harmonium.webp"
+              alt="Product Image"
+            />
+            <pre class="prodCardCompany"><b>Harmoniums</b></pre>
+            <p class="prodCardDiscount">Upto 60% off</p>
+            <p class="prodCardDetail">Shop now!</p>
+          </div>
+
+          <div class="prodCard">
+            <img
+              src="./assets/images/products/guitar-2.avif"
+              alt="Product Image"
+            />
+            <pre class="prodCardCompany"><b>Accoustic Guitars</b></pre>
+            <p class="prodCardDiscount">Starting from &#8377;1999</p>
+            <p class="prodCardDetail">By Harmon</p>
+          </div>
+
+          <div class="prodCard">
+            <img
+              src="./assets/images/products/flute.avif"
+              alt="Product Image"
+            />
+            <pre class="prodCardCompany"><b>Flutes</b></pre>
+            <p class="prodCardDiscount">Upto 80% off</p>
+            <p class="prodCardDetail">Shop now!</p>
+          </div>
+
+          <div class="prodCard">
+            <img
+              src="./assets/images/products/guitar.avif"
+              alt="Product Image"
+            />
+            <pre class="prodCardCompany"><b>Accoustic Guitars</b></pre>
+            <p class="prodCardDiscount">Starting &#8377;1799</p>
+            <p class="prodCardDetail">Jazz Reveal!</p>
+          </div>
+
+          <div id="scrolled2"></div>
         </div>
       </div>
     </div>

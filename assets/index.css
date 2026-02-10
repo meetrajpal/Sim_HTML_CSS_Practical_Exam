@@ -98,6 +98,7 @@ option {
   gap: -10rem;
 }
 
+/* Below I have used concept of CSS Image Sprites for displaying images of categories*/
 .cat1 {
   width: 4em;
   height: 3.3em;
@@ -210,6 +211,7 @@ option {
   margin-top: 1em;
   display: flex;
   overflow-x: scroll;
+  scroll-behavior: smooth;
 }
 
 .gtBtnContainer {
