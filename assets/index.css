@@ -259,13 +259,36 @@ button.dealViewBtn {
 .gtBtn {
   position: absolute;
   top: 120px;
-  right: 0;
   background-color: white;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.gtBtnRight {
+  right: 0;
+  left: auto;
   padding: 2em 0.1em 2em 0.3em;
   box-shadow: -5px 0px 10px grey;
   border-radius: 5px 0px 0px 5px;
-  cursor: pointer;
-  z-index: 1;
+}
+
+.gtBtnLeft {
+  left: 0;
+  right: auto;
+  display: none;
+  border-radius: 0px 5px 5px 0px;
+  box-shadow: 5px 0px 10px grey;
+  padding: 2em 0.3em 2em 0.1em;
+}
+
+.gtBtnContainer:has(#scrolled:target) .gtBtnLeft,
+.gtBtnContainer:has(#scrolled2:target) .gtBtnLeft {
+  display: block;
+}
+
+.gtBtnContainer:has(#scrolled:target) .gtBtnRight,
+.gtBtnContainer:has(#scrolled2:target) .gtBtnRight {
+  display: none;
 }
 
 .card:hover {
